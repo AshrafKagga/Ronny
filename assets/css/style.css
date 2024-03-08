@@ -1689,6 +1689,9 @@ section {
   font-size: 14px;
   background: #37517e;
 }
+.logo-footer img{
+  width: 60px;
+}
 
 #footer .footer-newsletter {
   padding: 50px 0;
