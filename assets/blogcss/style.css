@@ -1,0 +1,806 @@
+/*******************************************************************************
+       _____            __                     _____      __  ___
+      /  __  \   ______|  |__   _____   ___  (  ____|    |  |/  /
+     /  /__\  \ /   ___|  '_  \/  ___| ____ \|  ____|    |  ,  /
+    /  ______   \___   \  | |  |  |   |  ۝   |  |   ---->|     \
+   /__/      \__\______/__| |__|__|    \____/|__|        |__|\__\▄
+******************************************************************************/
+/************ CSS Stles **************************************
+
+    Template Name: Portfolio
+    Author: Ashraf K.
+    version: 1.0
+    Copyright: 2024
+
+****************************************************************/
+/*************************************
+
+        Table of Content
+
+        1. Body and Core Css
+        2. Helper
+        3. Layout
+        4. Home Section
+        5. About Section
+        6. Resume Section
+        7. Portfolio Section
+        8. Blogs Section
+        9. Contact Section
+        10. Blog Page Css
+        11. Mobile Responsive Css
+
+**************************************/
+/*======== 1. Body and Core Css ========*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none !important;
+  outline: none !important;
+}
+
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-5 {
+  margin-top: 5px !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-25 {
+  margin-top: 25px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mt-35 {
+  margin-top: 35px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-45 {
+  margin-top: 45px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-55 {
+  margin-top: 55px !important;
+}
+
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+.mt-62 {
+  margin-top: 62px !important;
+}
+
+.mt-65 {
+  margin-top: 65px !important;
+}
+
+.mt-70 {
+  margin-top: 70px !important;
+}
+
+.mt-75 {
+  margin-top: 75px !important;
+}
+
+.mt-80 {
+  margin-top: 80px !important;
+}
+
+.mt-85 {
+  margin-top: 85px !important;
+}
+
+.mt-90 {
+  margin-top: 90px !important;
+}
+
+.mt-95 {
+  margin-top: 95px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+/* Custom Margin Bottom */
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-35 {
+  margin-bottom: 35px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-45 {
+  margin-bottom: 45px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mb-55 {
+  margin-bottom: 55px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+
+.mb-62 {
+  margin-bottom: 62px !important;
+}
+
+.mb-65 {
+  margin-bottom: 65px !important;
+}
+
+.mb-70 {
+  margin-bottom: 70px !important;
+}
+
+.mb-75 {
+  margin-bottom: 75px !important;
+}
+
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+
+.mb-85 {
+  margin-bottom: 85px !important;
+}
+
+.mb-90 {
+  margin-bottom: 90px !important;
+}
+
+.mb-95 {
+  margin-bottom: 95px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+.m-0 {
+  margin: 0px !important;
+}
+
+/* Custom Padding top */
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-5 {
+  padding-top: 5px !important;
+}
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+.pt-15 {
+  padding-top: 15px !important;
+}
+
+.pt-20 {
+  padding-top: 20px !important;
+}
+
+.pt-25 {
+  padding-top: 25px !important;
+}
+
+.pt-30 {
+  padding-top: 30px !important;
+}
+
+.pt-35 {
+  padding-top: 35px !important;
+}
+
+.pt-40 {
+  padding-top: 40px !important;
+}
+
+.pt-45 {
+  padding-top: 45px !important;
+}
+
+.pt-50 {
+  padding-top: 50px !important;
+}
+
+.pt-55 {
+  padding-top: 55px !important;
+}
+
+.pt-60 {
+  padding-top: 60px !important;
+}
+
+.pt-65 {
+  padding-top: 65px !important;
+}
+
+.pt-70 {
+  padding-top: 70px !important;
+}
+
+.pt-75 {
+  padding-top: 75px !important;
+}
+
+.pt-80 {
+  padding-top: 80px !important;
+}
+
+.pt-85 {
+  padding-top: 85px !important;
+}
+
+.pt-90 {
+  padding-top: 90px !important;
+}
+
+.pt-95 {
+  padding-top: 95px !important;
+}
+
+.pt-100 {
+  padding-top: 100px !important;
+}
+
+/* Custom Padding top */
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-5 {
+  padding-bottom: 5px !important;
+}
+
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+
+.pb-15 {
+  padding-bottom: 15px !important;
+}
+
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
+.pb-25 {
+  padding-bottom: 25px !important;
+}
+
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+
+.pb-35 {
+  padding-bottom: 35px !important;
+}
+
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+
+.pb-45 {
+  padding-bottom: 45px !important;
+}
+
+.pb-50 {
+  padding-bottom: 50px !important;
+}
+
+.pb-55 {
+  padding-bottom: 55px !important;
+}
+
+.pb-60 {
+  padding-bottom: 60px !important;
+}
+
+.pb-65 {
+  padding-bottom: 65px !important;
+}
+
+.pb-70 {
+  padding-bottom: 70px !important;
+}
+
+.pb-75 {
+  padding-bottom: 75px !important;
+}
+
+.pb-80 {
+  padding-bottom: 80px !important;
+}
+
+.pb-85 {
+  padding-bottom: 85px !important;
+}
+
+.pb-90 {
+  padding-bottom: 90px !important;
+}
+
+.pb-95 {
+  padding-bottom: 95px !important;
+}
+
+.pb-100 {
+  padding-bottom: 100px !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+/*======== 2. Helper ========*/
+/*Preloader*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #11296f;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.loading-text span {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  font-size: 22px;
+}
+
+.loading-text span:before {
+  content: attr(data-preloader);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e1e1e1;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation-name: preload-animation;
+  animation-name: preload-animation;
+}
+
+.loading-text span:nth-child(2):before {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.loading-text span:nth-child(3):before {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.loading-text span:nth-child(4):before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.loading-text span:nth-child(5):before {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.loading-text span:nth-child(6):before {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.loading-text span:nth-child(7):before {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+@-webkit-keyframes preload-animation {
+
+  0%,
+  100% {
+    -webkit-transform: rotateY(-90deg) scale(1);
+    transform: rotateY(-90deg) scale(1);
+    opacity: 0;
+  }
+
+  20%,
+  50% {
+    -webkit-transform: rotateY(0) scale(1);
+    transform: rotateY(0) scale(1);
+    opacity: 1;
+  }
+
+  75% {
+    -webkit-transform: rotateY(0) scale(1.2);
+    transform: rotateY(0) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes preload-animation {
+
+  0%,
+  100% {
+    -webkit-transform: rotateY(-90deg) scale(1);
+    transform: rotateY(-90deg) scale(1);
+    opacity: 0;
+  }
+
+  20%,
+  50% {
+    -webkit-transform: rotateY(0) scale(1);
+    transform: rotateY(0) scale(1);
+    opacity: 1;
+  }
+
+  75% {
+    -webkit-transform: rotateY(0) scale(1.2);
+    transform: rotateY(0) scale(1.2);
+    opacity: 0;
+  }
+}
+
+
+/*Forms*/
+form {
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 38px;
+}
+
+form .input-field {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  color: #e1e1e1;
+  resize: none;
+}
+
+form .input-field.cf-error {
+  border-color: #aa0000;
+}
+
+form .input-field:focus {
+  border-color: #fff;
+}
+
+form .input-field.input--filled {
+  border-color: #fff;
+}
+
+#contact-form .alert-container {
+  text-align: center;
+}
+
+#contact-form .alert-container .alert {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+
+/*======== 8. Blogs Section ========*/
+.section-blog .blog-item {
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.03);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #e1e1e1;
+}
+
+.section-blog .blog-item:hover .title {
+  text-decoration: underline !important;
+}
+
+.section-blog .blog-item .post-img {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.section-blog .blog-item .post-content {
+  position: relative;
+  top: -20px;
+  padding: 0 20px;
+}
+
+.section-blog .blog-item .post-content .cat {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #e1e1e1;
+}
+
+.section-blog .blog-item .post-content .title {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section-blog .blog-item .post-content .meta .date {
+  font-size: 14px;
+  color: #7b7b7b;
+}
+
+/*======== 10. Blog Page Css ========*/  n
+.single-blog {
+  background-color: #2a2b30;
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.single-blog .blog-category {
+  text-align: center;
+}
+
+.single-blog .blog-category li {
+  display: inline-block;
+  position: relative;
+  border-right: 2px solid #e1e1e1;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.single-blog .blog-category li:last-child {
+  border: none;
+  padding-right: 0px;
+}
+
+.single-blog .blog-category li a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #e1e1e1;
+}
+
+.single-blog .blog-meta {
+  font-size: 14px;
+  color: #a1a1a1;
+  font-weight: 600;
+}
+
+/*======== 11. Mobile Responsive Css ========*/
+@media screen and (max-width: 991px) {
+  .section-home .banner-text .text-slideshow .animate-title {
+    font-size: 58px;
+  }
+
+  .section-about .about-img {
+    margin-bottom: 40px;
+  }
+
+  .section-contact .contact-detail {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header .nav-menu .nav-menu--link {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  header .social-links,
+  header .copy {
+    display: none;
+  }
+
+  .section-home .banner-text h4 {
+    font-size: 30px !important;
+  }
+
+  .section-home .banner-text .text-slideshow .animate-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  header .nav-menu .nav-menu--link {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  header .nav-menu .nav-menu--link span {
+    font-size: 14px;
+  }
+
+  header .nav-menu .nav-menu--link i {
+    display: none;
+  }
+
+  header .nav-menu .social-links,
+  header .nav-menu .copy {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-home .banner-text .text-slideshow .animate-title {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section-home .banner-text h4 {
+    font-size: 24px !important;
+  }
+
+  .section-home .banner-text .text-slideshow .animate-title {
+    font-size: 36px;
+  }
+
+  .section-about .client-logo {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-heading h2:before {
+    font-size: 52px;
+  }
+
+  .sub-heading h3:before,
+  .sub-heading h3:after {
+    width: 60px;
+  }
+
+  .section-resume .education,
+  .section-resume .experience {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .section-resume .education .event:after,
+  .section-resume .experience .event:after {
+    left: -32.85px;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  header .copy {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-height: 400px) {
+
+  header .copy,
+  header .social-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-height: 400px) {
+  header .nav-menu {
+    display: block;
+    min-height: 30vh;
+    overflow-y: scroll;
+  }
+}

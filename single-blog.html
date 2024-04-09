@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>AMY SOLUTIONS Blogs</title>
+  <title>AMY SOLUTIONS</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="author" content="Ashraf K." />
 
   <!-- Favicons -->
   <!-- <link href="assets/img/favicon.png" rel="icon">
@@ -27,7 +28,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <!-- <link href="assets/blogcss/style.css" rel="stylesheet"> -->
 
   <!-- =======================================================
   * Template Name: AMY solutions
@@ -38,23 +38,27 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top bg-dark">
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto">
         <a href="index.html">
           <img src="assets/img/logo-white.svg" alt="">
-          AMY SOLUTIONS
+          AMY solutions
         </a>
       </h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="" href="index.html">Home</a></li>
-          <li><a class="" href="index.html#contact">Contact</a></li>
-          <li><a class="" href="coming-soon.html">Shop</a></li>
-          <li><a class="active" href="coming-soon.html">Blog</a></li>
-          <li><a class="getstarted scrollto" href="index.html#contact">Get Started</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="coming-soon.html">Shop</a></li>
+          <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
+          <li><a class="getstarted scrollto" href="#contact">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -62,176 +66,82 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="blog-hero" class="d-flex align-items-center">
-
+  <div class="single-blog mb-5">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 text-light" data-aos="fade-up" data-aos-delay="200">
-          <h1 class="mt-5" data-shadow="Our Blogs">Our Blogs</h1>
-          <h4>Solutions has been in operation since 2007, providing IT Support such as technical helpdesk support, 
-            computer support and consulting.</h4>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="mt-80">
+                    <div class="blog-image mb-40">
+                        <img src="./assets/img/blogs/single-blog.jpg" alt="">
+                    </div>
+
+                    <div class="col-lg-10 offset-lg-1">
+                        <ul class="blog-category mb-15">
+                            <li> <a href="#">Travel</a> </li>
+                            <li> <a href="#">Photography</a> </li>
+                            <li> <a href="#">Adventure</a> </li>
+                        </ul>
+
+                        <h2 class="text-center">Adipisicing officiis vitae itaque consectetur nam molestias. Qui ex quia?</h2>
+
+                        <div class="blog-meta mt-15 mb-30 text-center">
+                            <span class="date">Posted On June 8, 2018</span>
+                        </div>
+                    </div>
+
+                    <div class="blog-content">
+                        <p>Sit dignissimos facere perferendis maiores odio. Sunt eveniet dolore ut incidunt iusto? Dolores velit eveniet iure corrupti omnis voluptate nobis Asperiores iure magni pariatur enim delectus. Quidem quidem hic minima fugit tenetur, tempore Tempore minus magnam laborum cumque voluptatibus Officia amet alias reprehenderit aspernatur modi. Obcaecati sunt voluptatem fuga repudiandae commodi Quia voluptatibus nostrum ratione quod vel. Ducimus maxime eum possimus voluptatem maxime. Placeat quaerat repellat repudiandae deleniti eius! Libero voluptas itaque aliquid beatae quae, ea hic Assumenda minus molestias sunt ex officia? Ullam quos asperiores itaque autem quo Voluptas necessitatibus inventore assumenda optio vero ipsum! Enim nobis repudiandae.</p>
+                        <p>Dolor earum corporis asperiores cupiditate aperiam, earum? Eum fugit libero quaerat veniam quibusdam esse beatae. Illo nemo quas iusto recusandae nam! Quibusdam unde mollitia obcaecati quia blanditiis. Cupiditate quia provident unde repudiandae architecto? Odit consequuntur dolorem ab vel vel. Est similique nesciunt vero dolorem nemo Voluptates id aspernatur rem quasi.</p>
+                        <blockquote> Ipsum obcaecati repellat rerum unde quo Soluta commodi hic quos blanditiis repudiandae Repudiandae aperiam nostrum inventore commodi iure? Impedit ipsam aliquam expedita tenetur veniam nostrum. Soluta alias cupiditate autem aliquam </blockquote>
+                        <p>Dolor amet culpa esse cum in? Id ab neque ipsa sapiente impedit doloremque quod. Velit veniam in odio voluptatem doloribus Minus laborum voluptates sed ea vel? Aspernatur in quos nulla veniam tempore In quibusdam reprehenderit maiores iste ab Est quae magni nemo repudiandae soluta? Eius qui veniam voluptatem iure molestiae</p>
+                    </div>
+
+                    <div class="form mt-100 mb-80">
+                        <h2 class="form-title mb-40 text-center">Leave a Comment</h2>
+
+                        <form action="#" id="blog-comment">
+                            <!--input field-->
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="input">
+                                        <input class="form-control mt-3" id="cf-name" type="text" name="name" placeholder="Your Name"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!--input field-->
+                                    <div class="input">
+                                        <input class="form-control mt-3" id="cf-email" type="text" name="email" placeholder="Your Email"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="input">
+                                        <!--input field-->
+                                        <div class="input">
+                                            <textarea class="form-control mt-3" id="cf-message" name="message" rows="5" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <!--submit button-->
+                                    <div class="submit-button text-center">
+                                        <button class="btn" id="cf-submit">Comment</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-  </section><!-- End Hero -->
-  <!-- ======= Recient Blogs ======= -->
-  <section id="recient-blogs">
-    <div class="blog-header">
-      <div id="blog-title" class="blog-title" >
-      <h3>What are my recient blogs</h3>
-    </div>
-    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Optio ratione laboriosam facilis, placeat magnam molestiae.</p>
-    </div>
-
-      <div class="row container">
-
-        <div class="col-lg-4 col-md-6 my-4">
-            <div class="blog-cards">
-              <!--blog item-->
-            <a class='blog-item' href='./single-blog.html'>
-
-                <div class="post-img">
-                    <img src="assets/img/blogs/img-1 (1).jpg" alt="">
-                </div>
-
-                <div class="post-content mt-2">
-                    <span class="cat">Travel</span>
-                    <h3 class="title">Explore the Pacific Northwest</h3>
-                    <div class="meta">
-                        <span class="date">Posted On March 8, 2015</span>
-                    </div>
-                </div>
-            </a>
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 my-4">
-            <div class="blog-cards">
-              <!--blog item-->
-            <a class='blog-item' href='./single-blog.html'>
-
-                <div class="post-img">
-                    <img src="assets/img/blogs/img-2.jpg" alt="">
-                </div>
-
-                <div class="post-content mt-2">
-
-                    <span class="cat">Travel</span>
-                    <h3 class="title">Explore the Pacific Northwest</h3>
-                    <div class="meta">
-                        <span class="date">Posted On March 8, 2015</span>
-                    </div>
-
-                </div>
-            </a>
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 my-4">
-            <div class="blog-cards">
-              <!--blog item-->
-            <a class='blog-item' href='./single-blog.html'>
-
-                <div class="post-img">
-                    <img src="assets/img/blogs/img-3.jpg" alt="">
-                </div>
-
-                <div class="post-content mt-2">
-
-                    <span class="cat">Travel</span>
-                    <h3 class="title">Explore the Pacific Northwest</h3>
-                    <div class="meta">
-                        <span class="date">Posted On March 8, 2015</span>
-                    </div>
-
-                </div>
-            </a>
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 my-4">
-            <div class="blog-cards">
-              <!--blog item-->
-            <a class='blog-item' href='./single-blog.html'>
-
-                <div class="post-img">
-                    <img src="assets/img/blogs/img-4.jpg" alt="">
-                </div>
-
-                <div class="post-content mt-2">
-
-                    <span class="cat">Travel</span>
-                    <h3 class="title">Explore the Pacific Northwest</h3>
-                    <div class="meta">
-                        <span class="date">Posted On March 8, 2015</span>
-                    </div>
-
-                </div>
-            </a>
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 my-4">
-            <div class="blog-cards">
-              <!--blog item-->
-            <a class='blog-item' href='./single-blog.html'>
-
-                <div class="post-img">
-                    <img src="assets/img/blogs/img-5.jpg" alt="">
-                </div>
-
-                <div class="post-content mt-2">
-
-                    <span class="cat">Travel</span>
-                    <h3 class="title">Explore the Pacific Northwest</h3>
-                    <div class="meta">
-                        <span class="date">Posted On March 8, 2015</span>
-                    </div>
-
-                </div>
-            </a>
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 my-4">
-            <div class="blog-cards">
-              <!--blog item-->
-            <a class='blog-item' href='./single-blog.html'>
-
-                <div class="post-img">
-                    <img src="assets/img/blogs/img-6.jpg" alt="">
-                </div>
-
-                <div class="post-content mt-2">
-
-                    <span class="cat">Travel</span>
-                    <h3 class="title">Explore the Pacific Northwest</h3>
-                    <div class="meta">
-                        <span class="date">Posted On March 8, 2015</span>
-                    </div>
-
-                </div>
-            </a>
-            </div>
-
-        </div>
-
-    </div>
-  </section>
-
-  <main id="main">
-
-    
-  </main><!-- End #main -->
-
+  </div>
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
@@ -254,7 +164,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3><span class="logo-footer"><img src="assets/assets/img/logo-blue.svg" alt="">AMY Solutions</h3>
+            <h3><span class="logo-footer"><img src="assets/img/logo-blue.svg" alt="">AMY Solutions</h3>
             <p>
               Namirebe Rd <br>
               Kampala<br>

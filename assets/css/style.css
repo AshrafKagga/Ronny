@@ -1,3 +1,10 @@
+/*******************************************************************************
+       _____            __                     _____      __  ___
+      /  __  \   ______|  |__   _____   ___  (  ____|    |  |/  /
+     /  /__\  \ /   ___|  '_  \/  ___| ____ \|  ____|    |  ,  /
+    /  ______   \___   \  | |  |  |   |  ۝   |  |   ---->|     \
+   /__/      \__\______/__| |__|__|    \____/|__|        |__|\__\▄
+******************************************************************************/
 /**
 * Template Name: Ronny Solutions
 * Author: Ashraf K.
@@ -20,6 +27,7 @@ a:hover {
   color: #73c5eb;
   text-decoration: none;
 }
+
 
 h1,
 h2,
@@ -2174,4 +2182,82 @@ Blog
 }
 #blog-hero h1{
   font-size: 70px;
+  color: #47b2e4;
+}
+#recient-blogs{
+  background: #ccc;
+  overflow:visible!important;
+  padding: 0;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.blog-header{
+  width: 80%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-title{
+  background: #232b96;
+  width: 50%;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 0 30px 0 30px;
+  color: #fff;
+  margin-top: -25px;
+}
+.blog-header p{
+  margin-top: 10px !important;
+}
+
+.blog-cards{
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;
+}
+
+#recient-blogs .blog-item .post-img img{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+  margin-top: -20px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.16);
+}
+#recient-blogs .blog-item:hover img{
+  transition: transform 0.5s;
+  transform: scale(1.07);
+}
+.cat{
+  color: #444444;
+}
+.meta{
+  color: #999
+}
+#blog-comment{
+  background: #eee;
+  padding: 15px 20px;
+  margin: 20px 0;
+}
+#blog-comment .btn{
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: #209dd8;
+  color: #fff;
+  margin: 20px 0;
+}
+.blog-category{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.blog-category li:hover a{
+  color: #26607a;
 }
