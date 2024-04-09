@@ -2185,7 +2185,7 @@ Blog
   color: #47b2e4;
 }
 #recient-blogs{
-  background: #E7F2F8;
+  background: #f8f9f9;
   overflow:visible!important;
   padding: 0;
   /* position: relative; */
@@ -2219,6 +2219,7 @@ Blog
 .blog-cards{
   background-color: #fff;
   border-radius: 10px 10px 0 0;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.16);
   padding: 10px 20px;
 }
 
