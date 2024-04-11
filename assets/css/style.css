@@ -2373,13 +2373,18 @@ Blog
 }
 
 .blog-title{
-  background: #232b96;
+  background: #209dd8;
   width: 50%;
   text-align: center;
   padding: 8px 0;
   border-radius: 0 30px 0 30px;
   color: #fff;
   margin-top: -25px;
+}
+@media(max-width:  720px){
+  .blog-title{
+    width: 90%;
+  }
 }
 .blog-header p{
   margin-top: 10px !important;
