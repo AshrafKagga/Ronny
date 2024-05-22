@@ -2366,7 +2366,7 @@ section {
 Blog
 -------------------------------------------------------------------------------------------- */
 #blog-hero{
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.055)), url(../img/bg/breadcrumb.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
